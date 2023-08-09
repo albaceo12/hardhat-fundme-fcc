@@ -1,0 +1,32 @@
+{
+  "name": "hardhat-fund-me-fcc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "test:staging": "npx hardhat test --network goerli",
+    "lint": "npx solhint contracts/*.sol",
+    "lint:fix": "npx solhint contracts/*.sol --fix",
+    "coverage": "npx hardhat coverage",
+    "format": "npx prettier --write . ",
+    "format:solidity": "npx prettier --write --plugin=prettier-plugin-solidity contracts/**/*.sol"
+  },
+  "author": "Hassan Nouri",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "hardhat-deploy": "^0.11.34",
+    "solhint": "^3.5.1",
+    "solidity-coverage": "^0.8.4"
+  },
+  "devDependencies": {
+    "@chainlink/contracts": "^0.6.1",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@nomicfoundation/hardhat-verify": "^1.0.4",
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
+    "hardhat": "^2.17.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "prettier-plugin-solidity": "^1.1.3"
+  }
+}
